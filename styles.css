@@ -19,6 +19,7 @@ body {
   .display {
     background: #333;
     padding: 20px;
+    min-height: 80px;
     text-align: right;
     position: relative;
   }
@@ -32,15 +33,15 @@ body {
   }
   
   .expression {
-    color: #aaa;
-    font-size: 16px;
+    color: #efebeb;
+    font-size: 30px;
     min-height: 20px;
     margin-bottom: 5px;
     }
   
   .result {
     color: white;
-    font-size: 32px;
+    font-size: 40px;
     }
   
   .keypad {
@@ -89,10 +90,16 @@ body {
   }
   
 .btn:hover {
-    background: #d95454;
+    background: #5e52e2;
     
   }
-  
+  .btn.active{
+    background-color: #cd3838;
+  }
+   
+  .btn:active{
+    background-color: #ed4b4b;
+  }
 
   
  
