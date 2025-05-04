@@ -299,11 +299,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     answer=arr.shift();                                                           //if only one element is left in the array, it is the answer
                     break;
                  }
-  
-                currentNum=arr.shift();                                                           //getting the first number from the array
+                 console.log("Current num:", currentNum);
+               if(arr[0]=="+"||arr[0]=="-"||arr[0]=="*"||arr[0]=="/"){
+                currentNum=arr.shift();                                                                        
+                }                                                         //getting the first number from the array
                 num1=0;
-                operator=arr.shift();                                                              //getting the operator from the array
-
+                         operator=arr.shift();                                     //getting the operator from the array
+                 console.log("Current num:", currentNum);
                 switch (operator) {                                                                //switch case for operators
                     case "+":
                         
@@ -316,6 +318,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         break;
                     case "*":
                         answer=(answer+currentNum)*getnum2();
+                        console.log("answer=",answer);
+                        console.log("arr=",arr);
                         break;
                     case "/":
                         answer=(answer+currentNum)/getnum2();
