@@ -90,15 +90,15 @@ body {
   }
   
 .btn:hover {
-    background: #5e52e2;
+    background: #7d73e8;
     
   }
   .btn.active{
-    background-color: #cd3838;
+    background-color: #ea6f6f;
   }
    
   .btn:active{
-    background-color: #ed4b4b;
+    background-color: #f07272;
   }
 
   
